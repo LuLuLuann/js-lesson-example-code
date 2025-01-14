@@ -17,4 +17,4 @@ You can uncomment each part if you want to see how the examples work:
  --> comparison-operators.js
 
  4. This is the CODE ALONG "LOGICAL OPERATORS" javascript page for class.
- --> logical-operators.js
+ --> logical-operators.js# js-lesson-example-code
