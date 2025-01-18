@@ -26,11 +26,15 @@ You can uncomment each part if you want to see how the examples work:
  6. This is the CODE ALONG "STRING METHODS" javascript page for class.
  --> string-methods.js
 
- 7. This is the CODE ALONG - FOR LOOPS javascript page for class.
+ 7. This is the CODE ALONG - "FOR LOOPS" javascript page for class.
 --> for-loops.js
  MAKE SURE YOU DO NOT HAVE AUTO SAVE ON WITH LOOPS because YOU CAN GET STUCK IN INFINITY LOOPS IF YOU'RE NOT CAREFUL. 
 
- 8. This is the CODE ALONG - STRING CONCATENATION javascript page for class.
+ 8. This is the CODE ALONG - "STRING CONCATENATION" javascript page for class.
 --> string-concatenation.js
+
+9. This is the CODE ALONG - "WHILE LOOPS" javascript page for class.
+--> while-loops.js
+ MAKE SURE YOU DO NOT HAVE AUTO SAVE ON WITH LOOPS because YOU CAN GET STUCK IN INFINITY LOOPS IF YOU'RE NOT CAREFUL. 
     
 

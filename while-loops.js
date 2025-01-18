@@ -42,6 +42,7 @@ x++
 }
 
 // NESTED FOR LOOP
+console.log("--------------NESTED FOR LOOP-------")
 
 let str ="ABC";
 
@@ -57,11 +58,16 @@ for (let i = 0; i<str.length; i++){
     }
 }
 
+console.log("-----------PRIME, EVEN and ODD NUMBERS------------")
 // Now, write a for loop that iterates from 1 to 20. The loop should:
 // Print “prime” for all prime numbers.
 // Print “even” for all even numbers.
 // Print “odd” for all odd numbers.
 // Treat 2 as an even number and 1 & 3 as odd, rather than prime.
+
+// Print all PRIME NUMBERS between 0 and 20.
+// A prime number is greater than 1, and only divisible by 1 and itself.
+// (need to do a nested "for loop")
 
 // PRIME NUMBERS
 // ATTEMPT 1:
@@ -133,15 +139,104 @@ if (i === 2) {
 }
 
 
-// Print all PRIME NUMBERS between 0 and 20.
-// A prime number is greater than 1, and only divisible by 1 and itself.
-// (need to do a nested "for loop")
-
-
-
 // BONUS LOGICAL QUESTION
+console.log("-----------BONUS LOGICAL QUESTION------------")
 
 // Romeo went to the vending machine to buy himself a cookie, which costs $4. He paid with a $10 bill, and the vending machine gave him his change in quarters.
 
 // Write a loop that outputs how many quarters Romeo received.
-let d=4;
+let change = 10 -4;
+let quarters=0;
+
+// console.log(change);
+while(change>= 0.25){
+// console.log(`Change is ${change}`)
+    change-= 0.25;
+quarters++
+}
+console.log(quarters);
+
+// DO WHILE LOOP
+console.log("-----------DO WHILE LOOP------------")
+
+let num;
+
+do{
+    num=prompt("Enter a number greater than 10 and less than 20")
+} while (num<=10 || num >= 20)
+
+console.log("--------next example---------------")
+
+let numm;
+
+do{ console.log("Welcome to my number game");
+    // 
+    if(numm && num>=20 || numm<=10){
+        console.log(`Number needs to be greater than 10 and less than 20`)
+    }
+    // parseInt turns a string into a number/integer
+    numm=parseInt(prompt("Enter a number greater than 10 and less than 20"));
+    console.log(`You entered: ${numm}`);
+} while (numm<=10 || numm >= 20)
+// WHILE sets the conditions that are OUTSIDE or OPPOSITE of what you want. 
+// WHILE you do the wrong thing, DO this. 
+// when you put the things that are outside of the conditions you want, the "DO" part happens. 
+
+console.log("---------next example--------------")
+
+let z = 10;
+
+do {
+	z--;
+	console.log(z);
+} while (z > 50);
+
+// -----
+console.log("----------LABELED LOOPS-------------")
+// myLoop: while (condition) {
+// 	// do the things
+// }
+
+console.log("---------next example--------------")
+
+let d = 1;
+let e = 1;
+
+myLoop: while (true) {
+	console.log(`Outer loop ${d}.`);
+	d++;
+
+	while (true) {
+		console.log(`Inner loop ${e}.`);
+		e++;
+
+		if (d == 5 && e % 5 == 0) {
+			break myLoop;
+		} else if (e % 5 == 0) {
+			break;
+		}
+	}
+}
+// ------
+console.log("--------next example---------------")
+//  CONTINUE keyword in a WHILE LOOP is VERY likely to BREAK your code and get you in an INFINITY LOOP. Check it online on Pythontutor.com before you save it into your code. 
+// the CONTINUE keyword in this example does the same thing as the BREAK keyword in the example before (line 216)
+
+let b = 1;
+let c = 1;
+
+myLoop: while (true) {
+	console.log(`Outer loop ${b}.`);
+	b++;
+
+	while (true) {
+		console.log(`Inner loop ${c}.`);
+		c++;
+
+		if (b == 5 && c % 5 == 0) {
+			break myLoop;
+		} else if (c % 5 == 0) {
+			continue myLoop;
+		}
+	}
+}
